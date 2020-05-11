@@ -28,8 +28,8 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + 'https://fredericksburgpeach.com/success',
-      cancelUrl: window.location.protocol + 'https://fredericksburgpeach.com/canceled',
+      successUrl: "https://fredericksburgpeach.com/success",
+      cancelUrl: "https://fredericksburgpeach.com/canceled",
     })
     .then(function (result) {
       if (result.error) {
