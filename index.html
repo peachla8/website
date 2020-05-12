@@ -52,12 +52,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
+<!--          <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
 
-          <li class="active"><a href="order.html">Place Order</a></li>
-
+          <li class="active"><a href="order.html">Delivery</a></li>
+-->
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -71,8 +71,8 @@
       <!-- Slide 1 -->
       <div class="container">
           <h2 class="animated fadeInDown">Fredericksburg Peach Delivery</h2>
-          <p class="animated fadeInUp">From the Farm to Your Home in Central Texas. <br> Picked. Graded. Delivered.</p>
-          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Learn More</a>           <a href="order.html" class="btn-get-started animated fadeInUp scrollto">Place Order</a>
+          <p class="animated fadeInUp">From the Farm to Your Home in Central Texas. <br> Picked. Graded. Delivered. <br> Season Starts May 12</p>
+          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Learn More</a>           <a href="index.html" class="btn-get-started animated fadeInUp scrollto">Delivery Coming Soon</a>
 
       </div>
 
@@ -101,7 +101,7 @@
 
         <div class="section-title" data-aos="zoom-out">
           <h2>About</h2>
-          <p>Who we are</p>
+          <p>Who We Are</p>
         </div>
 
         <div class="row content" data-aos="fade-up">
@@ -121,7 +121,7 @@
               We strive to optimize our processes to maximize efficiency and reduce waste. Starting this year in 2020, we will focus primarily on delivery in Central Texas,
                as we navigate this new paradigm.
             </p>
-            <a href="order.html" class="btn-learn-more">Place Order</a>             <a href="#contact" class="btn-learn-more">Contact Us</a>
+            <a href="index.html" class="btn-learn-more">Delivery Coming Soon</a>             <a href="#contact" class="btn-learn-more">Contact Us</a>
 
           </div>
         </div>
@@ -169,7 +169,7 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
+    <!--
     <section id="cta" class="cta">
       <div class="container">
 
@@ -184,7 +184,7 @@
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section>  -->
 
 
 
@@ -205,12 +205,12 @@
             <div class="info">
 
 
-              <div class="email">
+        <!--      <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
                 <p>info@fredericksburgpeach.com</p>
               </div>
-
+-->
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
@@ -223,35 +223,30 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            <div class="container">
 
+    <form id="contactform" action="//formspree.io/xjvakwwg" method="POST">
+   <div class="col-sm-12 slideanim">
+     <div class="row">
+       <div class="col-sm-6 form-group">
+         <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+       </div>
+       <div class="col-sm-6 form-group">
+         <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+       </div>
+     </div>
+     <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+     <div class="row">
+       <div class="col-sm-12 form-group">
+         <button class="btn pull-right" type="submit">Send Message</button>
+       </div>
+     </div>
+   </div>
+   <input type="hidden" name="_next" value="//peek.solutions/confirmation.html" />
+   <input type="text" name="_gotcha" style="display:none" />
+   </form>
           </div>
-
+</div>
         </div>
 
       </div>
@@ -265,9 +260,9 @@
       <div class="copyright">
         &copy;2020 Copyright <strong><span>FredericksburgPeach.com</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
+    <!--  <div class="credits">
             <a href="policy.html">Policy</a> &nbsp;&nbsp;<a href="terms.html">Terms</a>
-      </div>
+      </div> -->
     </div>
   </footer><!-- End Footer -->
 
