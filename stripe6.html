@@ -32,7 +32,10 @@
       // https://stripe.com/docs/payments/checkout/fulfillment
       successUrl: "https://fredericksburgpeach.com/success",
       cancelUrl: "https://fredericksburgpeach.com/canceled",
-    })
+      shippingAddressCollection: {
+    allowedCountries: ['US'],
+    }
+   })
     .then(function (result) {
       if (result.error) {
         // If `redirectToCheckout` fails due to a browser or network
