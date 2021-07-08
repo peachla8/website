@@ -67,10 +67,10 @@
       <!-- Slide 1 -->
       <div class="container">
           <h2 class="animated fadeInDown">Fredericksburg Peach Delivery</h2>
-          <p class="animated fadeInUp">Peaches Grown In Fredericksburg, Texas <br>Picked & Delivered Directly To You.</p>
+          <p class="animated fadeInUp">Peaches Grown In Fredericksburg, Texas <br>Picked & Delivered Directly To You <br>From the Beginning of June to the End of August</p>
 <Span>
           <a href="#pricing" class="btn-get-started animated fadeInUp scrollto">Place Order</a>
-          
+
  </Span>
      </div>
     </div>
@@ -91,182 +91,100 @@
 
             <div class="row">
 
-<script src="https://js.stripe.com/v3"></script>
-<a href="https://buy.stripe.com/14k4jreQN4XXd9eaEE">
-              <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-sku_HG8SzpZTU5yYon"
-  role="link">
-  Checkout
-  </button></a>
-</center>
-<div id="error-message"></div>
-<script>
-(function() {
-  var stripe = Stripe('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');
+              <div class="col-lg-6 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Freestone Peach Local Delivery</h3>
+            <h4><sup>$</sup>108</h4>
 
-  var checkoutButton = document.getElementById('checkout-button-sku_HG8SzpZTU5yYon');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{prod_JmQj7g2Y6SV8kT, quantity: 1}],
+            <ul>
+              <li>1/2 Bushel Box (25 lbs.)</li>
 
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: "https://fredericksburgpeach.com/success",
-      cancelUrl: "https://fredericksburgpeach.com/canceled",
-      shippingAddressCollection: {
-    allowedCountries: ['US'],
-    }
-   })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
+              <li>Picked and Delivered Fresh</li>
 
-            
-            <!--
+              <li>Delivery Fee Included</li>
 
-              <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-                <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                  <h3>ClingStone Peaches</h3>
-                  <h4><sup>$</sup>79<span> &nbsp; per 25 lb. box <b>*UnGraded</b></span></h4>
-                  <h4><sup>$</sup>99<span> &nbsp; per 25 lb. box <b>*Graded</b></span></h4>
-                  <ul>
-                    <li>
-                    <details>
-        <summary>Harvest Dates: </summary>
-        <p><br> Mid May - Early June</p>
-        </details>
-                    </li>
-                  </ul>
-                  <style>
-                    buttonz1 {
-                      display: inline;
-                      }
-                  </style>
-                  <div class="buttonz1">
-                  <div class="btn-wrap">
-                      <h3>Select to Order</h3>
-                    <a href="https://peachla8.github.io/website/stripe2.html" class="btn-buy" target="_blank">25 lb. Ungraded ClingStone </a>
-                  </div>
-                  <div class="btn-wrap">
-                    <a href="https://peachla8.github.io/website/stripe1.html" class="btn-buy" target="_blank">25 lb. Graded ClingStone </a>
-                    </div>
-                </div>
-              </div>
-             </div>
+              <li>*Hill Country Residents Only</li>
 
-              <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                <div class="box" data-aos="zoom-in" data-aos-delay="200">
-                <span class="advanced">Pre-Order</span>
-                  <h3>Semi-FreeStone Peaches</h3>
-                  <h4><sup>$</sup>79<span> &nbsp; per 25 lb. box <b>*UnGraded</b></span></h4>
-                  <h4><sup>$</sup>99<span> &nbsp; per 25 lb. box <b>*Graded</b></span></h4>
-                  <ul>
-                    <li>
-                    <details>
-                      <summary>Harvest Dates: </summary>
-                        <p> <br> Early June - Early July</p>
-                    </details>
-                    </li>
-                    </ul>
-                  <style>
-                    buttonz2 {
-                      display: inline;
-                      }
-                  </style>
-                  <div class="buttonz2">
-                  <div class="btn-wrap">
-                      <h3>Select to Order</h3>
-                    <a href="https://peachla8.github.io/website/stripe3.html" class="btn-buy" target="_blank">25 lb. Ungraded Semi-FreeStone</a>
-                  </div>
-                  <div class="btn-wrap">
-                    <a href="https://peachla8.github.io/website/stripe4.html" class="btn-buy" target="_blank">25 lb. Graded Semi-FreeStone</a>
-                  </div>
-              </div>
+
+
+            </ul>
+
+
+            <div class="btn-wrap">
+              <script src="https://js.stripe.com/v3"></script>
+              <a href="https://buy.stripe.com/14k4jreQN4XXd9eaEE">
+                            <button
+                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="checkout-button-sku_HG8SzpZTU5yYon"
+                role="link">
+                Checkout
+                </button></a>
+              </center>
+              <div id="error-message"></div>
+              <script>
+              (function() {
+                var stripe = Stripe('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');
+
+                var checkoutButton = document.getElementById('checkout-button-sku_HG8SzpZTU5yYon');
+                checkoutButton.addEventListener('click', function () {
+                  // When the customer clicks on the button, redirect
+                  // them to Checkout.
+                  stripe.redirectToCheckout({
+                    items: [{prod_JmQj7g2Y6SV8kT, quantity: 1}],
+
+                    // Do not rely on the redirect to the successUrl for fulfilling
+                    // purchases, customers may not always reach the success_url after
+                    // a successful payment.
+                    // Instead use one of the strategies described in
+                    // https://stripe.com/docs/payments/checkout/fulfillment
+                    successUrl: "https://fredericksburgpeach.com/success",
+                    cancelUrl: "https://fredericksburgpeach.com/canceled",
+                    shippingAddressCollection: {
+                  allowedCountries: ['US'],
+                  }
+                 })
+                  .then(function (result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById('error-message');
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+                });
+              })();
+              </script>
             </div>
-           </div>
---><!--
-              <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                <div class="box" data-aos="zoom-in" data-aos-delay="300">
-                  <span class="advanced">Free Delivery</span>
-                  <h3>FreeStone Peaches</h3>
-                  <h4><sup>$</sup>95<span> &nbsp; per 25 lb. box <b>*Ungraded</b></span></h4>
-                  <h4><sup>$</sup>115<span> &nbsp; per 25 lb. box <b>*Graded</b></span></h4>
-                <ul>
-                  <li>
-                  <details>
-        <summary>Harvest Dates: </summary>
-        <p> <br> Late June - Early August</p>
-                    </details></li>
-                  </ul>
-                  <style>
-                    buttonz3 {
-                      display: inline;
-                      }
-                  </style>
-
-
-                  <div class="buttonz3">
-                  <div class="btn-wrap">
-                    <h3>Select to Order</h3>
-
-                    <a href="https://peachla8.github.io/website/stripe5.html" class="btn-buy" target="_blank">25 lb. UnGraded FreeStone</a>
-                  </div>
-                  <div class="btn-wrap">
-                    <a href="https://peachla8.github.io/website/stripe6.html" class="btn-buy" target="_blank">25 lb. Graded FreeStone</a>
-                    </div>
-                </div>
-              </div>
           </div>
+        </div>
 
 
 
+              <div class="col-lg-6 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Freestone Peach Special Shipping</h3>
+            <h4><sup>$</sup>NA</h4>
 
-        <div id="error-message"></div>
-        <script>
-        (function() {
-        var stripe = Stripe('pk_live_4kDT6EyNxB8LOivTCLTw42Yj00RNSxHjCL');
+            <ul>
+              <li>Picked and Shipped Fresh</li>
 
-        var checkoutButton = document.getElementById('checkout-button-sku_HG7gxYsg8PIpR2');
-        checkoutButton.addEventListener('click', function () {
-          // When the customer clicks on the button, redirect
-          // them to Checkout.
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_HG7gxYsg8PIpR2', quantity: 1}],
+              <li>Delivery Fee Included</li>
 
-            // Do not rely on the redirect to the successUrl for fulfilling
-            // purchases, customers may not always reach the success_url after
-            // a successful payment.
-            // Instead use one of the strategies described in
-            // https://stripe.com/docs/payments/checkout/fulfillment
-            successUrl: "https://fredericksburgpeach.com/success",
-            cancelUrl: "https://fredericksburgpeach.com/canceled",
-          })
-          .then(function (result) {
-            if (result.error) {
-              // If `redirectToCheckout` fails due to a browser or network
-              // error, display the localized error message to your customer.
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-        })();
-        </script>
--->
+              <li>*US Residents Only</li>
+
+            </ul>
+
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Coming Soon</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
       </section><!-- End Pricing Section -->
 
 
