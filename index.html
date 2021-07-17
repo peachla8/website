@@ -61,24 +61,40 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex ">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
       <!-- Slide 1 -->
-      <div class="container">
+      <div class="carousel-item active">
+        <div class="carousel-container">
           <h2 class="animated fadeInDown">Fredericksburg Peach Delivery</h2>
-          <p class="animated fadeInUp">Peaches Grown In Fredericksburg, Texas <br>Picked & Delivered Directly To You <br>From the Beginning of June to the End of August</p>
-<Span>
-          <a href="#pricing" class="btn-get-started animated fadeInUp scrollto">Place Order</a>
+          <p class="animated fadeInUp">Peaches Grown In Fredericksburg, Texas, <br>Picked & Delivered Directly To You <br>From the Beginning of June to the End of August</p>
+    <a href="#pricing" class="btn-get-started animate__animated animate__fadeInUp scrollto">Start Order</a>
+        </div>
+      </div>
 
- </Span>
-     </div>
+
+
     </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
   </section><!-- End Hero -->
 
-
   <main id="main">
-
 
         <!-- ======= Pricing Section ======= -->
         <section id="pricing" class="pricing">
@@ -114,7 +130,8 @@
               <script src="https://js.stripe.com/v3"></script>
               <a href="https://buy.stripe.com/14k4jreQN4XXd9eaEE">
                             <button
-                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                style="background-color: #663366;
+;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
                 id="checkout-button-sku_HG8SzpZTU5yYon"
                 role="link">
                 Checkout
