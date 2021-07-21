@@ -109,11 +109,150 @@
 
               <div class="col-lg-6 col-md-6">
           <div class="box" data-aos="zoom-in">
-            <h3>Freestone Peach Local Delivery</h3>
+            <h3>Local Delivery</h3>
+            <h4><sup>$</sup>33</h4>
+
+            <ul>
+              <li>1/8 Bushel // 6 Pounds</li>
+
+              <li>Picked and Delivered Fresh</li>
+
+              <li>Delivery Fee Included</li>
+
+              <li>*Hill Country Residents Only</li>
+
+
+
+            </ul>
+
+
+            <div class="btn-wrap">
+              <script src="https://js.stripe.com/v3"></script>
+              <a href="https://buy.stripe.com/eVa6rzbEBgGFfhmbIK">
+                            <button
+                style="background-color: #663366;
+        ;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="checkout-button-sku_JtGj5ZOg1CbSqJ"
+                role="link">
+                 Checkout
+                </button></a>
+              </center>
+              <div id="error-message"></div>
+              <script>
+              (function() {
+                var stripe = Stripe('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');
+
+                var checkoutButton = document.getElementById('checkout-button-sku_HG8SzpZTU5yYon');
+                checkoutButton.addEventListener('click', function () {
+                  // When the customer clicks on the button, redirect
+                  // them to Checkout.
+                  stripe.redirectToCheckout({
+                    items: [{prod_JmQj7g2Y6SV8kT, quantity: 1}],
+
+                    // Do not rely on the redirect to the successUrl for fulfilling
+                    // purchases, customers may not always reach the success_url after
+                    // a successful payment.
+                    // Instead use one of the strategies described in
+                    // https://stripe.com/docs/payments/checkout/fulfillment
+                    successUrl: "https://fredericksburgpeach.com/success",
+                    cancelUrl: "https://fredericksburgpeach.com/canceled",
+                    shippingAddressCollection: {
+                  allowedCountries: ['US'],
+                  }
+                 })
+                  .then(function (result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById('error-message');
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+                });
+              })();
+              </script>
+            </div>
+          </div>
+        </div>
+
+              <div class="col-lg-6 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Local Delivery</h3>
+            <h4><sup>$</sup>58</h4>
+
+            <ul>
+              <li>1/4 Bushel // 12 Pounds</li>
+
+              <li>Picked and Delivered Fresh</li>
+
+              <li>Delivery Fee Included</li>
+
+              <li>*Hill Country Residents Only</li>
+
+
+
+            </ul>
+
+
+            <div class="btn-wrap">
+              <script src="https://js.stripe.com/v3"></script>
+              <a href="https://buy.stripe.com/dR62bj0ZXdut8SY6or">
+                            <button
+                style="background-color: #663366;
+        ;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="checkout-button-sku_JtGnxARZLr7nVg
+"
+                role="link">
+                 Checkout
+                </button></a>
+              </center>
+              <div id="error-message"></div>
+              <script>
+              (function() {
+                var stripe = Stripe('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');
+
+                var checkoutButton = document.getElementById('checkout-button-sku_HG8SzpZTU5yYon');
+                checkoutButton.addEventListener('click', function () {
+                  // When the customer clicks on the button, redirect
+                  // them to Checkout.
+                  stripe.redirectToCheckout({
+                    items: [{prod_JmQj7g2Y6SV8kT, quantity: 1}],
+
+                    // Do not rely on the redirect to the successUrl for fulfilling
+                    // purchases, customers may not always reach the success_url after
+                    // a successful payment.
+                    // Instead use one of the strategies described in
+                    // https://stripe.com/docs/payments/checkout/fulfillment
+                    successUrl: "https://fredericksburgpeach.com/success",
+                    cancelUrl: "https://fredericksburgpeach.com/canceled",
+                    shippingAddressCollection: {
+                  allowedCountries: ['US'],
+                  }
+                 })
+                  .then(function (result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById('error-message');
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+                });
+              })();
+              </script>
+            </div>
+          </div>
+        </div>
+</div>
+<br><div class = "row">
+
+              <div class="col-lg-6 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Local Delivery</h3>
             <h4><sup>$</sup>108</h4>
 
             <ul>
-              <li>1/2 Bushel Box (25 lbs.)</li>
+              <li>1/2 Bushel // 25 Pounds</li>
 
               <li>Picked and Delivered Fresh</li>
 
@@ -179,10 +318,12 @@
 
               <div class="col-lg-6 col-md-6">
           <div class="box" data-aos="zoom-in">
-            <h3>Freestone Peach Special Shipping</h3>
+            <h3>Special Shipping</h3>
             <h4><sup>$</sup>NA</h4>
 
             <ul>
+              <li>1/8 Bushel // 6 Pounds</li>
+
               <li>Picked and Shipped Fresh</li>
 
               <li>Delivery Fee Included</li>
@@ -268,7 +409,7 @@
               <li data-aos="fade-up" data-aos-delay="200">
                 <a data-toggle="collapse" href="#faq2" class="collapsed">When Will I Recieve My Order?  <i class="icofont-simple-up"></i></a>
                 <div id="faq2" class="collapse" data-parent=".faq-list">
-                  <p>You will recieve your peaches generally within one week of placing the order. We do our best to coordinate our deliveries in an efficient manner while timing with the weekly harvests so that you receive the freshest peaches. If you have any special requests please <a href="contact.html> send us an email or give us a call</a>.</p>
+                  <p>You will recieve your peaches generally within one week of placing the order. We do our best to coordinate our deliveries in an efficient manner while timing with the weekly harvests so that you receive the freshest peaches. If you have any special requests please send us a message.</p>
                 </div>
               </li>
 
@@ -287,18 +428,8 @@
 
 
 
-                                      <li data-aos="fade-up" data-aos-delay="500">
-                                        <a data-toggle="collapse" href="#faq6" class="collapsed">Are There Options Other Than 25 lb. Boxes? <i class="icofont-simple-up"></i></a>
-                                        <div id="faq6" class="collapse" data-parent=".faq-list">
-                                          <p>At this moment we are only offering 25 lb. boxes. In the near future, it is hopeful that we will be able to offer variable sizes and other produce.
-    <br>
-                                             In the meantime we encourage you to find someone to split the box with. Share some with your friends and neighbors!
-        <br>
-                                             You can freeze peaches for up to 3 to 6 months, and use them for smoothies, pies, cobblers, ice cream, salsas, culinary dishes, and more smoothies! </p>
 
 
-                                          </div>
-                                      </li>
 
             </ul>
 
